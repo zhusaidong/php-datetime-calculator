@@ -4,7 +4,7 @@
 */
 use \zhusaidong\DateTimeCalculator\DateTimeCalculator;
 
-class DateTimeCalculatorTests extends PHPUnit_Framework_TestCase
+class DateTimeCalculatorTest extends PHPUnit_Framework_TestCase
 {
 	public function testNow()
 	{
