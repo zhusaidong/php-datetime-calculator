@@ -3,6 +3,7 @@
     "description": "php datetime calculator",
     "type": "library",
     "license": "BSD-2-Clause",
+    "homepage": "https://github.com/zhusaidong/php-datetime-calculator/",
     "authors": [
         {
             "name": "zhusaidong",
@@ -17,5 +18,10 @@
     },
     "autoload": {
         "files": ["src/DateTimeCalculator.php"]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
     }
 }
