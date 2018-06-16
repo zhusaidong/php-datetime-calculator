@@ -10,6 +10,7 @@
             "email": "zhusaidong@gmail.com"
         }
     ],
+    "prefer-stable": true,
     "require": {
     	"php": "^5.5"
     },
