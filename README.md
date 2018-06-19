@@ -6,7 +6,7 @@ php datetime calculator
 
 - Installation
 
-```
+```php
 composer require zhusaidong/php-datetime-calculator
 ```
 
@@ -14,7 +14,7 @@ composer require zhusaidong/php-datetime-calculator
 
 	### add or sub time
 	
-	```
+	```php
 	use \zhusaidong\DateTimeCalculator\DateTimeCalculator;
 	
 	$dtc = new DateTimeCalculator;
@@ -25,7 +25,7 @@ composer require zhusaidong/php-datetime-calculator
 
 	### time diff
 	
-	```
+	```php
 	use \zhusaidong\DateTimeCalculator\DateTimeCalculator;
 	
 	$dtc = new DateTimeCalculator;
