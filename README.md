@@ -1,6 +1,9 @@
 # php-datetime-calculator
 php datetime calculator
 
+![travis](https://api.travis-ci.org/zhusaidong/php-datetime-calculator.svg?branch=master)
+![license](https://img.shields.io/github/license/zhusaidong/php-datetime-calculator.svg)
+
 - Installation
 
 ```
