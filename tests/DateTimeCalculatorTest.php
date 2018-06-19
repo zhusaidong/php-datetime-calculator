@@ -2,9 +2,10 @@
 /**
 * @author zhusaidong [zhusaidong@gmail.com]
 */
-use \zhusaidong\DateTimeCalculator\DateTimeCalculator;
+use zhusaidong\DateTimeCalculator\DateTimeCalculator;
+use PHPUnit\Framework\TestCase;
 
-class DateTimeCalculatorTest extends PHPUnit_Framework_TestCase
+class DateTimeCalculatorTest extends TestCase
 {
 	public function testNow()
 	{

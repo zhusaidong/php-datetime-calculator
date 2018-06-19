@@ -1,3 +1,4 @@
 *.clpprj
 *.csprj
 vendor
+/composer.lock

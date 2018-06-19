@@ -10,16 +10,16 @@
             "email": "zhusaidong@gmail.com"
         }
     ],
-    "prefer-stable": true,
-    "minimum-stability":"stable",
     "require": {
-    	"php": ">=5.5"
+    	"php": ">=7.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "4.8"
+        "phpunit/phpunit": "^6.2"
     },
     "autoload": {
-        "files": ["src/DateTimeCalculator.php"]
+        "psr-4":{
+        	"zhusaidong\\DateTimeCalculator\\":"src/"
+        }
     },
     "extra": {
         "branch-alias": {
