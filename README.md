@@ -4,32 +4,36 @@ php datetime calculator
 ![travis](https://api.travis-ci.org/zhusaidong/php-datetime-calculator.svg?branch=master)
 ![license](https://img.shields.io/github/license/zhusaidong/php-datetime-calculator.svg)
 
-- Installation
+## Installation
 
 ```php
 composer require zhusaidong/php-datetime-calculator
 ```
 
-- Usage
+## Usage
 
-	### add or sub time
-	
-	```php
-	use \zhusaidong\DateTimeCalculator\DateTimeCalculator;
-	
-	$dtc = new DateTimeCalculator;
-	$dtc->setTimestamp(time());
+### add or sub time
 
-	echo $dtc->sub(DateTimeCalculator::YEAR,1)->format();//2017-06-16 17:36:51
-	```
+```php
+require('./vendor/autoload.php');
 
-	### time diff
-	
-	```php
-	use \zhusaidong\DateTimeCalculator\DateTimeCalculator;
-	
-	$dtc = new DateTimeCalculator;
-	$dtc->setTimestamp(time());
-	
-	echo $dtc->add(DateTimeCalculator::YEAR,1)->diff(DateTimeCalculator::now());//365
-	```
+use \zhusaidong\DateTimeCalculator\DateTimeCalculator;
+
+$dtc = new DateTimeCalculator;
+$dtc->setTimestamp(time());
+
+echo $dtc->sub(DateTimeCalculator::YEAR,1)->format();//2017-06-16 17:36:51
+```
+
+### time diff
+
+```php
+require('./vendor/autoload.php');
+
+use \zhusaidong\DateTimeCalculator\DateTimeCalculator;
+
+$dtc = new DateTimeCalculator;
+$dtc->setTimestamp(time());
+
+echo $dtc->add(DateTimeCalculator::YEAR,1)->diff(DateTimeCalculator::now());//365
+```
