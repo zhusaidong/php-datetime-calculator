@@ -22,7 +22,8 @@ use \zhusaidong\DateTimeCalculator\DateTimeCalculator;
 $dtc = new DateTimeCalculator;
 $dtc->setTimestamp(time());
 
-echo $dtc->sub(DateTimeCalculator::YEAR,1)->format();//2017-06-16 17:36:51
+echo $dtc->sub(DateTimeCalculator::YEAR,1)->add(DateTimeCalculator::MONTH,1)->format();
+//output:2017-07-16 17:36:51
 ```
 
 ### time diff
@@ -35,5 +36,24 @@ use \zhusaidong\DateTimeCalculator\DateTimeCalculator;
 $dtc = new DateTimeCalculator;
 $dtc->setTimestamp(time());
 
-echo $dtc->add(DateTimeCalculator::YEAR,1)->diff(DateTimeCalculator::now());//365
+echo $dtc->add(DateTimeCalculator::YEAR,1)->diff(DateTimeCalculator::now());
+//output:365
+```
+
+## methods
+
+```php
+format();//format date
+
+diff();//diff date
+
+add();//add date
+
+sub();//sub date
+
+next();//next date
+
+last();//last date
+
+ago();//this function is an alias of sub
 ```

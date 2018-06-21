@@ -14,6 +14,7 @@ class DateTimeCalculator
 	const HOUR 		= 'hour';
 	const MINUTE 	= 'minute';
 	const SECOND 	= 'second';
+	const WEEK 		= 'week';
 	
 	/**
 	* @var timestamp
@@ -101,6 +102,52 @@ class DateTimeCalculator
 	public function sub($dateType,$number)
 	{
 		$this->timestamp = strtotime('-'.$number.' '.$dateType,$this->timestamp);
+		return $this;
+	}
+	/**
+	* next date
+	* 
+	* @param string $dateType
+	* 
+	* @return DateTimeCalculator
+	*/
+	public function next($dateType)
+	{
+		return $this->add($dateType,1);
+	}
+	/**
+	* last date
+	* 
+	* @param string $dateType
+	* 
+	* @return DateTimeCalculator
+	*/
+	public function last($dateType)
+	{
+		return $this->sub($dateType,1);
+	}
+	/**
+	* ago date, this function is an alias of sub
+	* 
+	* @param string $dateType
+	* @param int $number
+	* 
+	* @return DateTimeCalculator
+	*/
+	public function ago($dateType,$number)
+	{
+		return $this->sub($dateType,$number);
+	}
+	/**
+	* modify
+	* 
+	* @param string $modify
+	* 
+	* @return DateTimeCalculator
+	*/
+	public function modify($modify)
+	{
+		$this->timestamp = strtotime($modify,$this->timestamp);
 		return $this;
 	}
 	/**
